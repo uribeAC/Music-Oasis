@@ -1,0 +1,21 @@
+{
+  "name": "start-launcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "serve public",
+    "build:dev": "tsc --watch",
+    "start:dev": "node --watch ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "serve": "^14.2.4",
+    "typescript": "^5.4.3"
+  }
+}
