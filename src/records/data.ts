@@ -1,6 +1,6 @@
 import { Record } from "./types";
 
-const records: Record[] = [
+export const records: Record[] = [
   {
     id: 1,
     name: "Bridges to Babylon",
