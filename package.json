@@ -8,13 +8,15 @@
     "build": "tsc",
     "start": "serve public",
     "build:dev": "tsc --watch",
-    "start:dev": "node --watch ."
+    "start:dev": "node --watch .",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.11.30",
+    "husky": "^9.1.7",
     "serve": "^14.2.4",
     "typescript": "^5.4.3"
   }
