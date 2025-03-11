@@ -35,14 +35,19 @@
   justify-content: center;
 
   .record {
-    width: fit-content;
-    height: 502px;
+    width: 343px;
     border: 1px solid rgb(229, 229, 229);
     border-radius: 8px;
 
     .record__cover {
-      width: 343px;
       border-radius: 8px;
+    }
+
+    .record__title {
+      width: inherit;
+      display: flex;
+      padding: 16px;
+      font-weight: 500;
     }
   }
 }
