@@ -7,3 +7,20 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+.records {
+  display: flex;
+  justify-content: center;
+
+  .record {
+    width: fit-content;
+    height: 502px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 8px;
+
+    .record__cover {
+      width: 343px;
+      border-radius: 8px;
+    }
+  }
+}
