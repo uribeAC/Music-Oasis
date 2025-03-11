@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
   font-family: "Montserrat";
   font-size: 28px;
@@ -6,4 +7,10 @@ h1 {
   color: rgba(31, 44, 77, 1);
   display: flex;
   justify-content: center;
+=======
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+>>>>>>> cee3dc32519442cbf773aea1434fa420b2ea1c5a
 }

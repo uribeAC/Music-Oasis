@@ -1,1 +1,3 @@
-console.log("a");
+import { renderHeader } from "./ui/renderHeader.js";
+
+renderHeader();
