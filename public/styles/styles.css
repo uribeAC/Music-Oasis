@@ -1,0 +1,9 @@
+h1 {
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: rgba(31, 44, 77, 1);
+  display: flex;
+  justify-content: center;
+}
