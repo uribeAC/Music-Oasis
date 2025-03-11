@@ -82,5 +82,21 @@
         color: rgb(107, 121, 153);
       }
     }
+
+    .buttons-container {
+      display: flex;
+      gap: 10px;
+
+      button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+      }
+
+      .buy {
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
   }
 }
