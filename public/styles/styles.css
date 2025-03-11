@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
 .page-header {
@@ -15,7 +16,6 @@
 }
 
 .page-heading {
-  font-family: "Montserrat";
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 34px;
