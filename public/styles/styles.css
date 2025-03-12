@@ -3,36 +3,20 @@
   font-family: "Montserrat";
 }
 
-.page-header {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 45px;
-  margin-top: 45px;
-
-  @media (width >= 500px) {
-    height: 40px;
-    display: flex;
-    margin-top: 60px;
-    justify-content: space-between;
-  }
+.body {
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .page-heading {
   font-size: 1.75rem;
   font-weight: 700;
-  height: 40px;
   color: rgb(31, 44, 77);
-  margin-top: 106px;
-  margin-bottom: 116px;
+  display: flex;
+  justify-content: center;
 
   @media (width >= 500px) {
     font-size: 36px;
-    height: 40px;
-    width: 100%;
-    padding-left: 149px;
-    padding-right: 181px;
+    justify-content: flex-start;
   }
 }
 
