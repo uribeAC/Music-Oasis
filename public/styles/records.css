@@ -10,80 +10,80 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+}
 
-  .record {
-    width: 90vw;
-    border: 1px solid rgb(229, 229, 229);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
+.record {
+  width: 90vw;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
 
-    .record__cover {
-      width: inherit;
-      height: auto;
-      border-radius: 8px;
-    }
+.record__cover {
+  width: inherit;
+  height: auto;
+  border-radius: 8px;
+}
 
-    .record__details {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      padding: 16px;
-    }
+.record__details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
 
-    .record__name {
-      display: flex;
-      font-weight: 600;
-      font-size: 1.125rem;
-    }
+.record__name {
+  display: flex;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
 
-    .record__type {
-      background-color: rgb(231, 248, 241);
-      color: rgb(9, 178, 114);
-      padding: 5px 28px;
-      border-radius: 4px;
-      font-weight: 600;
-      font-size: 0.875rem;
-      text-transform: uppercase;
-    }
+.record__type {
+  background-color: rgb(231, 248, 241);
+  color: rgb(9, 178, 114);
+  padding: 5px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
 
-    .record__actions {
-      display: flex;
-      justify-content: space-between;
-    }
+.record__actions {
+  display: flex;
+  justify-content: space-between;
+}
 
-    .price-container {
-      display: flex;
-      flex-direction: column;
+.price-container {
+  display: flex;
+  flex-direction: column;
+}
 
-      .record__discounted-price {
-        font-size: 1.125rem;
-        font-weight: 700;
-        color: rgb(207, 30, 31);
-      }
+.record__discounted-price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: rgb(207, 30, 31);
+}
 
-      .record__price {
-        font-size: 1rem;
-        font-weight: 500;
-        color: rgb(107, 121, 153);
-      }
-    }
+.record__price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(107, 121, 153);
+}
 
-    .buttons-container {
-      display: flex;
-      gap: 10px;
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}
 
-      button {
-        cursor: pointer;
-        background: transparent;
-        border: none;
-      }
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
 
-      .buy {
-        font-weight: 600;
-        font-size: 0.875rem;
-        text-transform: uppercase;
-      }
-    }
-  }
+.buy {
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
 }
