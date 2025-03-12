@@ -107,6 +107,7 @@ main {
   display: flex;
   font-weight: 600;
   font-size: 1.125rem;
+  text-wrap: wrap;
 }
 
 .record__type {
