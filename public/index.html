@@ -19,33 +19,27 @@
 
 <body>
   <main>
-    <header class="page-header">
-      <h1 class="page-heading">Records</h1>
-    </header>
+    <h2 class="page-heading">Records</h2>
     <ul class="records">
       <li>
         <article class="record">
           <img class="record__cover" src="/multimedia/img/Bridges-to-Babylon.jpg"
             alt="Bridge to Babylon's record cover">
-          <h3 class="record__title">Bridges To Babylon (The Rolling Stones)</h3>
-          <div class="record__type-container">
-            <span class="record__type">VINYL</span>
-          </div>
           <div class="record__details">
-            <div class="price-container">
-              <span class="record__discounted-price">$21.99</span>
-              <span class="record__price"><s>$21.99</s></span>
-            </div>
-            <div class="buttons-container">
-              <button class="favorite">
-                <img src="/multimedia/icons/heart.svg" alt="favorite icon">
-              </button>
-              <button class="cart">
-                <img src="/multimedia/icons/cart.svg" alt="cart icon">
-              </button>
-              <button class="buy">
-                BUY
-              </button>
+            <h3 class="record__name">Bridges To Babylon (The Rolling Stones)</h3>
+            <span class="record__type">vinyl</span>
+            <div class="record__actions">
+              <div class="record__prices">
+                <span class="record__price--discounted">$21.99</span>
+                <span class="record__price--original"><s>$21.99</s></span>
+              </div>
+              <div class="record__buttons">
+                <input class="record__button--favorite" type="button" aria-label="Add to favorite" />
+                <input class="record__button--cart" type="button" aria-label="Add to cart" />
+                <button class="record__button--buy" aria-label="Buy">
+                  buy
+                </button>
+              </div>
             </div>
           </div>
         </article>
