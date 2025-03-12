@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: "Montserrat";
 }
 
 .body {
@@ -17,6 +16,18 @@
   @media (width >= 500px) {
     font-size: 36px;
     justify-content: flex-start;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 16px 0px 16px;
+  gap: 45px;
+
+  @media (width >= 500px) {
+    padding: 60px 181px 0px 149px;
+    gap: 60px;
   }
 }
 
