@@ -4,7 +4,6 @@
   justify-content: space-around;
   list-style: none;
   gap: 16px;
-  padding: 16px;
 
   @media (width >= 500px) {
     display: flex;
@@ -25,11 +24,17 @@
       border-radius: 8px;
     }
 
+    .record__details {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px;
+    }
+
     .record__title {
       display: flex;
       font-weight: 600;
       font-size: 1.125rem;
-      margin: 16px;
     }
 
     .record__type {
@@ -37,14 +42,12 @@
       color: rgb(9, 178, 114);
       padding: 5px 28px;
       border-radius: 4px;
-      margin: 0 16px;
       font-weight: 600;
       font-size: 0.875rem;
     }
 
-    .record__details {
+    .record__actions {
       display: flex;
-      margin: 16px 18px;
       justify-content: space-between;
     }
 
