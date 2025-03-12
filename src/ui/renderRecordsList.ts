@@ -3,7 +3,7 @@ import { Record } from "../records/types";
 
 export const renderRecordsList = (records: Record[]): void => {
   const recordsList = document.querySelector(".records")!;
-  const dummyRecord = recordsList.querySelector(".record")!;
+  const dummyRecord = recordsList.querySelector(".records li")!;
   recordsList.innerHTML = "";
 
   records.forEach((record) => {
