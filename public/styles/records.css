@@ -55,36 +55,48 @@
   justify-content: space-between;
 }
 
-.price-container {
+.record__prices {
   display: flex;
   flex-direction: column;
 }
 
-.record__discounted-price {
+.record__price--discounted {
   font-size: 1.125rem;
   font-weight: 700;
   color: rgb(207, 30, 31);
 }
 
-.record__price {
+.record__price--original {
   font-size: 1rem;
   font-weight: 500;
   color: rgb(107, 121, 153);
 }
 
-.buttons-container {
+.record__buttons {
   display: flex;
   gap: 10px;
 }
 
-button {
+.record__buttons > * {
   cursor: pointer;
   background: transparent;
   border: none;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.buy {
+.record__button--favorite {
+  background-image: url(../multimedia/icons/heart.svg);
+}
+
+.record__button--cart {
+  background-image: url(../multimedia/icons/cart.svg);
+}
+
+.record__button--buy {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
+  width: fit-content;
 }

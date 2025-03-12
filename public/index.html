@@ -30,18 +30,14 @@
             <h3 class="record__name">Bridges To Babylon (The Rolling Stones)</h3>
             <span class="record__type">vinyl</span>
             <div class="record__actions">
-              <div class="price-container">
-                <span class="record__discounted-price">$21.99</span>
-                <span class="record__price"><s>$21.99</s></span>
+              <div class="record__prices">
+                <span class="record__price--discounted">$21.99</span>
+                <span class="record__price--original"><s>$21.99</s></span>
               </div>
-              <div class="buttons-container">
-                <button class="favorite">
-                  <img src="./multimedia/icons/heart.svg" alt="favorite icon">
-                </button>
-                <button class="cart">
-                  <img src="./multimedia/icons/cart.svg" alt="cart icon">
-                </button>
-                <button class="buy">
+              <div class="record__buttons">
+                <input class="record__button--favorite" type="button" aria-label="Add to favorite" />
+                <input class="record__button--cart" type="button" aria-label="Add to cart" />
+                <button class="record__button--buy" aria-label="Buy">
                   buy
                 </button>
               </div>
