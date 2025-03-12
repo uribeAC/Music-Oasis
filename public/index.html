@@ -4,15 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/header.css">
-  <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="stylesheet" href="./styles/reset.css">
-  <script type="module" src="./js/index.js"></script>
-  <title>Music Oasis</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/records.css">
+  <script type="module" src="./js/index.js"></script>
+  <title>Music Oasis</title>
 </head>
 
 <body>
@@ -20,11 +21,35 @@
     <header class="page-header">
       <h1 class="page-heading">Records</h1>
     </header>
-    <div class="records">
-      <article class="record">
-        <img class="record__cover" src="./multimedia/img/Bridges-to-Babylon.jpg" alt="Bridge to Babylon's record cover">
-      </article>
-    </div>
+    <ul class="records">
+      <li>
+        <article class="record">
+          <img class="record__cover" src="./multimedia/img/Bridges-to-Babylon.jpg"
+            alt="Bridge to Babylon's record cover">
+          <h3 class="record__title">Bridges To Babylon (The Rolling Stones)</h3>
+          <div class="record__type-container">
+            <span class="record__type">VINYL</span>
+          </div>
+          <div class="record__details">
+            <div class="price-container">
+              <span class="record__discounted-price">$21.99</span>
+              <span class="record__price"><s>$21.99</s></span>
+            </div>
+            <div class="buttons-container">
+              <button class="favorite">
+                <img src="./multimedia/icons/heart.svg" alt="favorite icon">
+              </button>
+              <button class="cart">
+                <img src="./multimedia/icons/cart.svg" alt="cart icon">
+              </button>
+              <button class="buy">
+                BUY
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
   </main>
 </body>
 
