@@ -16,7 +16,7 @@ body {
   justify-content: center;
 
   @media (width >= 500px) {
-    font-size: 36px;
+    font-size: 2.25rem;
     justify-content: flex-start;
   }
 }
@@ -71,20 +71,19 @@ main {
 
 .records {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   list-style: none;
   gap: 16px;
 
   @media (width >= 500px) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 }
 
 .record {
-  width: 90vw;
+  max-width: 92vw;
   border: 1px solid rgb(229, 229, 229);
   border-radius: 8px;
   display: flex;
