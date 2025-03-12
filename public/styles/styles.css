@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -31,6 +33,150 @@ main {
   }
 }
 
-main > .records {
+.main-header {
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: center;
+  width: 100%;
+  height: 3.75rem;
+
+  > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 20px;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+
+    @media (width >= 500px) {
+      display: contents;
+      visibility: visible;
+    }
+  }
+
+  @media (width >= 500px) {
+    height: 90px;
+
+    button {
+      height: inherit;
+      width: 148px;
+    }
+  }
+}
+
+.logo-container {
+  gap: 10px;
+
+  @media (width >= 500px) {
+    display: contents;
+    visibility: visible;
+  }
+}
+
+.records {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  gap: 16px;
+
+  @media (width >= 500px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.record {
+  width: 90vw;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.record__cover {
+  width: inherit;
+  height: auto;
+  border-radius: 8px;
+}
+
+.record__details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.record__name {
+  display: flex;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.record__type {
+  background-color: rgb(231, 248, 241);
+  color: rgb(9, 178, 114);
+  padding: 5px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  align-self: start;
+}
+
+.record__actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.record__prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.record__price--discounted {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: rgb(207, 30, 31);
+}
+
+.record__price--original {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(107, 121, 153);
+}
+
+.record__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.record__buttons > * {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.record__button--favorite {
+  background-image: url(../multimedia/icons/heart.svg);
+}
+
+.record__button--cart {
+  background-image: url(../multimedia/icons/cart.svg);
+}
+
+.record__button--buy {
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  width: fit-content;
 }
