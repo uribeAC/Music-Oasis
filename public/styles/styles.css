@@ -16,7 +16,7 @@ body {
   justify-content: center;
 
   @media (width >= 500px) {
-    font-size: 36px;
+    font-size: 2.25rem;
     justify-content: flex-start;
   }
 }
@@ -24,12 +24,12 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  padding: 45px 16px 0px 16px;
-  gap: 45px;
+  padding: 5vh 4vw;
+  gap: 5vh;
 
   @media (width >= 500px) {
-    padding: 60px 181px 0px 149px;
-    gap: 60px;
+    padding: 6.2vh 8.5vw;
+    gap: 6.2vh;
   }
 }
 
@@ -71,20 +71,19 @@ main {
 
 .records {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   list-style: none;
   gap: 16px;
 
   @media (width >= 500px) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 }
 
 .record {
-  width: 90vw;
+  max-width: 92vw;
   border: 1px solid rgb(229, 229, 229);
   border-radius: 8px;
   display: flex;
