@@ -99,6 +99,7 @@ main {
 
   @media (width >= 500px) {
     width: 25vw;
+    height: calc(25vw * 1.45);
   }
 }
 
@@ -113,6 +114,10 @@ main {
   flex-direction: column;
   gap: 16px;
   padding: 16px;
+
+  @media (width >= 500px) {
+    height: inherit;
+  }
 }
 
 .record__name {
@@ -120,6 +125,10 @@ main {
   font-weight: 600;
   font-size: 1.125rem;
   text-wrap: wrap;
+
+  @media (width >= 500px) {
+    height: 50%;
+  }
 }
 
 .record__type {
