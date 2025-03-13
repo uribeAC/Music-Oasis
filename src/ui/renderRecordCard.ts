@@ -46,4 +46,15 @@ export const renderRecordCard = (
 
   recordCover.src = record.coverUrl;
   recordName.textContent = `${record.name} (${record.artist})`;
+
+  const recordTags = recordCard.querySelector(
+    ".record__tags"
+  ) as HTMLDivElement;
+
+  if (record.price !== record.originalPrice) {
+    const recordTag = document.createElement("span");
+    recordTag.classList.add("record__tag--discount");
+
+    recordTags.prepend(recordTag);
+  }
 };
