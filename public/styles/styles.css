@@ -28,8 +28,8 @@ main {
   gap: 5vh;
 
   @media (width >= 500px) {
-    padding: 6.2vh 8.5vw;
-    gap: 6.2vh;
+    padding: 60px 165px;
+    gap: 60px;
   }
 }
 
