@@ -77,8 +77,16 @@ main {
   gap: 16px;
 
   @media (width >= 500px) {
+    justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px 2%;
+  }
+}
+
+.record-list-item {
+  @media (width >= 500px) {
+    width: 32%;
   }
 }
 
@@ -88,6 +96,9 @@ main {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+
+  @media (width >= 500px) {
+  }
 }
 
 .record__cover {
