@@ -28,6 +28,8 @@ main {
   gap: 5vh;
 
   @media (width >= 500px) {
+    margin: auto;
+    max-width: 1920px;
     padding: 60px 165px;
     gap: 60px;
   }
@@ -77,16 +79,9 @@ main {
   gap: 16px;
 
   @media (width >= 500px) {
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px 2%;
-  }
-}
-
-.record-list-item {
-  @media (width >= 500px) {
-    width: 32%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
   }
 }
 
@@ -96,11 +91,6 @@ main {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-
-  @media (width >= 500px) {
-    width: 25vw;
-    height: calc(25vw * 1.45);
-  }
 }
 
 .record__cover {
@@ -116,7 +106,7 @@ main {
   padding: 16px;
 
   @media (width >= 500px) {
-    height: inherit;
+    height: 170px;
   }
 }
 
