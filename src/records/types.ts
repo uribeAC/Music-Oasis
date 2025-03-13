@@ -6,5 +6,5 @@ export type Record = {
   type: "vinyl" | "digital";
   price: number;
   originalPrice: number;
-  isDiskOfTheMonth: boolean;
+  isRecordOfTheMonth: boolean;
 };

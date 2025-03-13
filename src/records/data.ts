@@ -9,7 +9,7 @@ export const records: Record[] = [
     type: "vinyl",
     price: 21.99,
     originalPrice: 21.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const records: Record[] = [
     type: "vinyl",
     price: 99.99,
     originalPrice: 119.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const records: Record[] = [
     type: "digital",
     price: 23.99,
     originalPrice: 23.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ export const records: Record[] = [
     type: "digital",
     price: 269.99,
     originalPrice: 359.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ export const records: Record[] = [
     type: "vinyl",
     price: 219.99,
     originalPrice: 219.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ export const records: Record[] = [
     type: "digital",
     price: 19.99,
     originalPrice: 19.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ export const records: Record[] = [
     type: "vinyl",
     price: 24.59,
     originalPrice: 24.59,
-    isDiskOfTheMonth: true,
+    isRecordOfTheMonth: true,
   },
   {
     id: 8,
@@ -79,7 +79,7 @@ export const records: Record[] = [
     type: "vinyl",
     price: 1.99,
     originalPrice: 1.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 9,
@@ -89,7 +89,7 @@ export const records: Record[] = [
     type: "vinyl",
     price: 27.49,
     originalPrice: 27.49,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 10,
@@ -99,7 +99,7 @@ export const records: Record[] = [
     type: "vinyl",
     price: 34.99,
     originalPrice: 34.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 11,
@@ -109,7 +109,7 @@ export const records: Record[] = [
     type: "digital",
     price: 19.99,
     originalPrice: 39.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 12,
@@ -119,7 +119,7 @@ export const records: Record[] = [
     type: "digital",
     price: 23.99,
     originalPrice: 23.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 13,
@@ -129,7 +129,7 @@ export const records: Record[] = [
     type: "vinyl",
     price: 59.99,
     originalPrice: 70.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
   {
     id: 14,
@@ -139,6 +139,6 @@ export const records: Record[] = [
     type: "digital",
     price: 19.99,
     originalPrice: 19.99,
-    isDiskOfTheMonth: false,
+    isRecordOfTheMonth: false,
   },
 ];
