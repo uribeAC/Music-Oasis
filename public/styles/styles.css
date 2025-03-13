@@ -142,9 +142,13 @@ main {
   flex-direction: column;
 }
 
-.record__price--discounted {
+.record__price {
   font-size: 1.125rem;
   font-weight: 700;
+  color: rgb(31, 44, 77);
+}
+
+.record__price--discounted {
   color: rgb(207, 30, 31);
 }
 
@@ -181,4 +185,34 @@ main {
   font-size: 0.875rem;
   text-transform: uppercase;
   width: fit-content;
+}
+
+.record__tags {
+  position: absolute;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: space-between;
+  max-width: 92vw;
+}
+
+.record__tag--type {
+  background-color: rgb(231, 248, 241);
+  color: rgb(9, 178, 114);
+  padding: 5px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+.record__tag--discount {
+  background-color: rgb(251, 233, 233);
+  color: rgb(207, 30, 31);
+  padding: 5px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  align-self: flex-start;
 }
