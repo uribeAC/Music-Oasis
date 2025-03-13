@@ -64,6 +64,13 @@ const renderDiscount = (record: Record, recordCard: HTMLElement): void => {
   }
 };
 
+const renderType = (record: Record, recordCard: HTMLElement): void => {
+  const recordType = recordCard.querySelector(
+    ".record__tag--type"
+  ) as HTMLSpanElement;
+  recordType.textContent = record.type;
+};
+
 export const renderRecordCard = (
   record: Record,
   recordCard: HTMLElement
@@ -72,4 +79,5 @@ export const renderRecordCard = (
   renderName(record, recordCard);
   renderPrices(record, recordCard);
   renderDiscount(record, recordCard);
+  renderType(record, recordCard);
 };
