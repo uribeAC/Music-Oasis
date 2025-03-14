@@ -86,15 +86,19 @@ main {
 }
 
 .record {
-  max-width: 92vw;
+  max-width: 34.063rem;
   border: 1px solid rgb(229, 229, 229);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+
+  @media (width >= 500px) {
+    position: relative;
+  }
 }
 
 .record__cover {
-  width: inherit;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
@@ -106,7 +110,7 @@ main {
   padding: 16px;
 
   @media (width >= 500px) {
-    height: 170px;
+    height: 10.625rem;
   }
 }
 
@@ -201,6 +205,10 @@ main {
   width: inherit;
   padding: 1.5rem;
   flex-wrap: wrap;
+
+  @media (width >= 500px) {
+    width: 510px;
+  }
 }
 
 .record__tag--type {
