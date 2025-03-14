@@ -55,7 +55,7 @@ export const records: Record[] = [
     id: 6,
     name: "Show me love",
     artist: "Robin S",
-    coverUrl: "/images/covers/showm-me-love.webp",
+    coverUrl: "/images/covers/show-me-love.webp",
     type: "digital",
     price: 19.99,
     originalPrice: 19.99,
