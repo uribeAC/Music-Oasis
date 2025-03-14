@@ -264,3 +264,8 @@ main {
   color: rgb(31, 44, 77);
   border-bottom: 2px solid rgb(207, 30, 31);
 }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
