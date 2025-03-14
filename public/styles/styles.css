@@ -8,6 +8,10 @@ body {
   font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .page-heading {
   font-size: 1.75rem;
   font-weight: 700;
@@ -73,7 +77,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  list-style: none;
   gap: 16px;
 
   @media (width >= 500px) {
@@ -241,5 +244,24 @@ main {
 
   &::after {
     content: "discount";
+  }
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+}
+
+.filter {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: rgb(107, 121, 153);
+
+  input {
+    display: none;
+  }
+
+  label {
+    border-bottom: 3px solid red;
   }
 }
