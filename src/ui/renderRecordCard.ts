@@ -17,38 +17,21 @@ const renderName = (record: Record, recordCard: HTMLElement): void => {
 };
 
 const renderPrices = (record: Record, recordCard: HTMLElement): void => {
-  const recordPrices = recordCard.querySelector(
-    ".record__prices"
+  const recordOriginalPrice = recordCard.querySelector(
+    ".record__price--original s"
   ) as HTMLDivElement;
 
-  if (record.price !== record.originalPrice) {
-    const recordOriginalPrice = document.createElement("span");
-    const strikethroughElement = document.createElement("s");
+  const recordDiscountedPrice = recordCard.querySelector(
+    ".record__price--discounted"
+  ) as HTMLDivElement;
 
-    recordOriginalPrice.classList.add(
-      "record__price",
-      "record__price--original"
-    );
-    strikethroughElement.textContent = `$${record.originalPrice}`;
+  recordDiscountedPrice.textContent = `$${record.price}`;
+  recordOriginalPrice.textContent = `$${record.originalPrice}`;
 
-    recordOriginalPrice.appendChild(strikethroughElement);
-
-    const recordPrice = document.createElement("span");
-    recordPrice.classList.add("record__price", "record__price--discounted");
-    recordPrice.textContent = `$${record.price}`;
-
-    recordPrices.appendChild(recordPrice);
-    recordPrices.appendChild(recordOriginalPrice);
-
-    return;
+  if (record.price === record.originalPrice) {
+    recordOriginalPrice.remove();
+    recordDiscountedPrice.classList.remove("record__price--discounted");
   }
-
-  const recordPrice = document.createElement("span");
-
-  recordPrice.classList.add("record__price");
-  recordPrice.textContent = `$${record.originalPrice}`;
-
-  recordPrices.appendChild(recordPrice);
 };
 
 const renderDiscount = (record: Record, recordCard: HTMLElement): void => {
@@ -64,13 +47,6 @@ const renderDiscount = (record: Record, recordCard: HTMLElement): void => {
   }
 };
 
-const renderType = (record: Record, recordCard: HTMLElement): void => {
-  const recordType = recordCard.querySelector(
-    ".record__tag--type"
-  ) as HTMLSpanElement;
-  recordType.textContent = record.type;
-};
-
 export const renderRecordCard = (
   record: Record,
   recordCard: HTMLElement
@@ -79,5 +55,4 @@ export const renderRecordCard = (
   renderName(record, recordCard);
   renderPrices(record, recordCard);
   renderDiscount(record, recordCard);
-  renderType(record, recordCard);
 };
