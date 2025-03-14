@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -8,8 +10,16 @@ body {
   font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-ul {
-  list-style: none;
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 4vw;
+  gap: 5vh;
+
+  @media (width >= 500px) {
+    padding: 6.2vh 8.5vw;
+    gap: 6.2vh;
+  }
 }
 
 .page-heading {
@@ -48,7 +58,7 @@ main {
   height: 3.75rem;
 
   @media (width >= 500px) {
-    height: 90px;
+    height: 5.625rem;
   }
 }
 
@@ -65,13 +75,10 @@ main {
 
 .main-header__heading {
   font-size: 20px;
-  visibility: hidden;
-  width: 0;
-  height: 0;
+  display: none;
 
   @media (width >= 500px) {
-    display: contents;
-    visibility: visible;
+    display: inline;
   }
 }
 
