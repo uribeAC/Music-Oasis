@@ -250,16 +250,17 @@ main {
   gap: 20px;
 }
 
-.filter {
-  font-size: 1.125rem;
-  font-weight: 700;
+.filter-button {
+  border: none;
+  background: transparent;
+  font-family: inherit;
   color: rgb(107, 121, 153);
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 3px 0;
+}
 
-  input {
-    display: none;
-  }
-
-  label {
-    border-bottom: 3px solid red;
-  }
+.filter-button--selected {
+  color: rgb(31, 44, 77);
+  border-bottom: 2px solid rgb(207, 30, 31);
 }
