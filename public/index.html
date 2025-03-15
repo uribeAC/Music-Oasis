@@ -19,34 +19,76 @@
 <body>
   <main>
     <h2 class="page-heading">Records</h2>
-    <ul class="records">
-      <li class="record-list-item">
-        <article class="record">
-          <div class="record__tags">
-            <span class="record__tag--type">vinyl</span>
-          </div>
-          <img class="record__cover" src="/images/covers/bridges-to-babylon.webp" alt="record cover" width="341"
-            height="341">
-          <div class="record__details">
-            <h3 class="record__name">Bridges To Babylon (The Rolling Stones)</h3>
-            <span class="record__type">vinyl</span>
-            <div class="record__actions">
-              <div class="record__prices">
-                <span class="record__price record__price--discounted">$20</span>
-                <span class="record__price--original"><s>$30</s></span>
+    <div class="container">
+      <ul class="records">
+        <li class="record-list-item">
+          <article class="record">
+            <div class="record__tags">
+              <span class="record__tag--type">vinyl</span>
+            </div>
+            <img class="record__cover" src="/images/covers/bridges-to-babylon.webp" alt="record cover" width="341"
+              height="341">
+            <div class="record__details">
+              <h3 class="record__name">Bridges To Babylon (The Rolling Stones)</h3>
+              <span class="record__type">vinyl</span>
+              <div class="record__actions">
+                <div class="record__prices">
+                  <span class="record__price record__price--discounted">$20</span>
+                  <span class="record__price--original"><s>$30</s></span>
+                </div>
+                <div class="record__buttons">
+                  <input class="record__button--favorite" type="button" aria-label="Add to favorite" />
+                  <input class="record__button--cart" type="button" aria-label="Add to cart" />
+                  <button class="record__button--buy" aria-label="Buy">
+                    buy
+                  </button>
+                </div>
               </div>
-              <div class="record__buttons">
-                <input class="record__button--favorite" type="button" aria-label="Add to favorite" />
-                <input class="record__button--cart" type="button" aria-label="Add to cart" />
-                <button class="record__button--buy" aria-label="Buy">
-                  buy
-                </button>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <aside class="sidebar">
+        <article class="record-of-the-month">
+          <h2 class="sidebar-title">
+            Record of the month
+          </h2>
+          <div class="record-of-the-month__card">
+            <img src="multimedia/img/Agila.webp" alt="Agila Cover" class="record-of-the-month__cover" width="172px"
+              height="172px">
+            <div class="record-of-the-month__details">
+              <h3 class="record__name">Agila (Extremoduro)</h3>
+              <div class="record__actions record__actions--vertical">
+                <div class="record__prices">
+                  <span class="record__price record__price--discounted record__price--right">$20</span>
+                  <span class="record__price--original record__price--right"><s>$30</s></span>
+                </div>
+                <div class="record__buttons record__buttons--right">
+                  <input class="record__button--favorite" type="button" aria-label="Add to favorite" />
+                  <input class="record__button--cart" type="button" aria-label="Add to cart" />
+                  <button class="record__button--buy" aria-label="Buy">
+                    buy
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </article>
-      </li>
-    </ul>
+        <article class="best-sellers">
+          <h2 class="sidebar-title">Best Sellers</h2>
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item"><span class="sidebar-list__text">Georgie Dann</span></li>
+            <li class="sidebar-list__item"><span class="sidebar-list__text">Marifé de Triana</span></li>
+            <li class="sidebar-list__item"><span class="sidebar-list__text">Los Panchos</span></li>
+            <li class="sidebar-list__item"><span class="sidebar-list__text">Los Chichos</span></li>
+            <li class="sidebar-list__item"><span class="sidebar-list__text">Mocedades</span></li>
+            <li class="sidebar-list__item"><span class="sidebar-list__text">El Fary</span></li>
+            <li class="sidebar-list__item"><span class="sidebar-list__text">Camela</span></li>
+            <li class="sidebar-list__item"><span class="sidebar-list__text">Musiquito</span></li>
+          </ul>
+        </article>
+      </aside>
+    </div>
   </main>
   <footer class="main-footer">
     <section class="page-branding">
