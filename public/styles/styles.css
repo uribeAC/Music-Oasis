@@ -64,7 +64,7 @@ main {
   cursor: pointer;
   border: none;
   border-radius: 0;
-  padding: 1rem;
+  padding: 16px;
   height: inherit;
   gap: 10px;
   display: flex;
@@ -82,7 +82,7 @@ main {
 
 .header-button__search {
   border-right: 1px solid #e5e5e5;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .header-button__cart {
