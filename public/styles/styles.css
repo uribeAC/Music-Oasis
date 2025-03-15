@@ -82,6 +82,50 @@ main {
   }
 }
 
+@media (width >= 500px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 47px;
+  }
+
+  .record-of-the-month {
+    display: flex;
+    flex-direction: column;
+    width: 359px;
+    gap: 27px;
+  }
+
+  .record-of-the-month__title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .record-of-the-month__card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .record-of-the-month__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .record__actions--vertical {
+    flex-direction: column;
+  }
+  .record__buttons--right {
+    justify-content: flex-end;
+  }
+
+  .record__price--right {
+    text-align: end;
+  }
+}
+
 .records {
   display: flex;
   flex-direction: column;
@@ -93,6 +137,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    width: 1185px;
   }
 }
 
@@ -218,7 +263,6 @@ main {
   flex-wrap: wrap;
 
   @media (width >= 500px) {
-    width: 510px;
   }
 }
 

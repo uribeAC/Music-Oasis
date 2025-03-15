@@ -19,23 +19,50 @@
 <body>
   <main>
     <h2 class="page-heading">Records</h2>
-    <ul class="records">
-      <li class="record-list-item">
-        <article class="record">
-          <div class="record__tags">
-            <span class="record__tag--type">vinyl</span>
-          </div>
-          <img class="record__cover" src="/images/covers/bridges-to-babylon.webp" alt="record cover" width="341"
-            height="341">
-          <div class="record__details">
-            <h3 class="record__name">Bridges To Babylon (The Rolling Stones)</h3>
-            <span class="record__type">vinyl</span>
-            <div class="record__actions">
-              <div class="record__prices">
-                <span class="record__price record__price--discounted">$20</span>
-                <span class="record__price--original"><s>$30</s></span>
+    <div class="container">
+      <ul class="records">
+        <li class="record-list-item">
+          <article class="record">
+            <div class="record__tags">
+              <span class="record__tag--type">vinyl</span>
+            </div>
+            <img class="record__cover" src="/images/covers/bridges-to-babylon.webp" alt="record cover" width="341"
+              height="341">
+            <div class="record__details">
+              <h3 class="record__name">Bridges To Babylon (The Rolling Stones)</h3>
+              <span class="record__type">vinyl</span>
+              <div class="record__actions">
+                <div class="record__prices">
+                  <span class="record__price record__price--discounted">$20</span>
+                  <span class="record__price--original"><s>$30</s></span>
+                </div>
+                <div class="record__buttons">
+                  <input class="record__button--favorite" type="button" aria-label="Add to favorite" />
+                  <input class="record__button--cart" type="button" aria-label="Add to cart" />
+                  <button class="record__button--buy" aria-label="Buy">
+                    buy
+                  </button>
+                </div>
               </div>
-              <div class="record__buttons">
+            </div>
+          </article>
+        </li>
+      </ul>
+      <aside class="record-of-the-month">
+        <h2 class="record-of-the-month__title">
+          Record of the month
+        </h2>
+        <article class="record-of-the-month__card">
+          <img src="multimedia/img/Agila.webp" alt="Agila Cover" class="record-of-the-month__cover" width="172px"
+            height="172px">
+          <div class="record-of-the-month__details">
+            <h3 class="record__name">Agila (Extremoduro)</h3>
+            <div class="record__actions record__actions--vertical">
+              <div class="record__prices">
+                <span class="record__price record__price--discounted record__price--right">$20</span>
+                <span class="record__price--original record__price--right"><s>$30</s></span>
+              </div>
+              <div class="record__buttons record__buttons--right">
                 <input class="record__button--favorite" type="button" aria-label="Add to favorite" />
                 <input class="record__button--cart" type="button" aria-label="Add to cart" />
                 <button class="record__button--buy" aria-label="Buy">
@@ -45,8 +72,8 @@
             </div>
           </div>
         </article>
-      </li>
-    </ul>
+      </aside>
+    </div>
   </main>
 </body>
 
