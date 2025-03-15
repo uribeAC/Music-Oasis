@@ -96,6 +96,23 @@ main {
     flex-direction: row;
     gap: 24px;
   }
+
+  .record-of-the-month__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .record__actions--vertical {
+    flex-direction: column;
+  }
+  .record__buttons--right {
+    justify-content: flex-end;
+  }
+
+  .record__price--right {
+    text-align: end;
+  }
 }
 
 .records {
