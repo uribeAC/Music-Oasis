@@ -13,12 +13,14 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  padding: 5vh 4vw;
-  gap: 5vh;
+  padding: 45px 16px;
+  gap: 45px;
 
   @media (width >= 500px) {
-    padding: 6.2vh 8.5vw;
-    gap: 6.2vh;
+    margin: auto;
+    max-width: 1920px;
+    padding: 60px 165px;
+    gap: 60px;
   }
 }
 
@@ -40,20 +42,6 @@ a:visited {
   @media (width >= 500px) {
     font-size: 2.25rem;
     justify-content: flex-start;
-  }
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 5vh 4vw;
-  gap: 5vh;
-
-  @media (width >= 500px) {
-    margin: auto;
-    max-width: 1920px;
-    padding: 60px 165px;
-    gap: 60px;
   }
 }
 
