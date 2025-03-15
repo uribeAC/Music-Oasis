@@ -99,72 +99,6 @@ a:visited {
   }
 }
 
-@media (width >= 500px) {
-  .record-of-the-month {
-    display: flex;
-    flex-direction: column;
-    width: 359px;
-    gap: 27px;
-  }
-
-  .sidebar-title {
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-
-  .record-of-the-month__card {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-  }
-
-  .record-of-the-month__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .record__actions--vertical {
-    flex-direction: column;
-  }
-
-  .record__buttons--right {
-    justify-content: flex-end;
-  }
-
-  .record__price--right {
-    text-align: end;
-  }
-
-  .sidebar-lists {
-    display: flex;
-    flex-direction: column;
-    gap: 49px;
-  }
-  .sidebar-block {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .sidebar-list {
-    list-style-position: inside;
-    list-style-image: url(../images/icons/bullet-point.svg);
-  }
-
-  .sidebar-list__text {
-    padding-left: 28.6px;
-    color: rgba(107, 121, 153, 1);
-    font-weight: 500;
-    font-size: 0.875rem;
-  }
-
-  .sidebar-list__item + .sidebar-list__item {
-    margin-top: 16px;
-  }
-}
-
 .records {
   display: flex;
   flex-direction: column;
@@ -319,6 +253,77 @@ a:visited {
 
   &::after {
     content: "discount";
+  }
+}
+
+@media (width >= 500px) {
+  .record-of-the-month {
+    display: flex;
+    flex-direction: column;
+    width: 359px;
+    gap: 27px;
+  }
+
+  .sidebar-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .record-of-the-month__card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .record__cover--little {
+    width: 172px;
+    height: auto;
+  }
+
+  .record-of-the-month__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .record__actions--vertical {
+    flex-direction: column;
+  }
+
+  .record__buttons--right {
+    justify-content: flex-end;
+  }
+
+  .record__price--right {
+    text-align: end;
+  }
+
+  .sidebar-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+  }
+  .sidebar-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sidebar-list {
+    list-style-position: inside;
+    list-style-image: url(../images/icons/bullet-point.svg);
+  }
+
+  .sidebar-list__text {
+    padding-left: 28.6px;
+    color: rgba(107, 121, 153, 1);
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  .sidebar-list__item + .sidebar-list__item {
+    margin-top: 16px;
   }
 }
 
