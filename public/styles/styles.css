@@ -269,10 +269,46 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media (width >= 500px) {
+    padding: 60px 165px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-branding {
+  display: flex;
+  flex-direction: column;
+  width: 317px;
+  justify-content: space-between;
+}
+
+.logo-container--footer {
+  justify-content: flex-start;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: none;
+
+  @media (width >= 500px) {
+    display: inline;
+  }
+}
+
+.page-tagline {
+  margin-bottom: 30px;
+
+  @media (width >= 500px) {
+    margin-top: 30px;
+  }
 }
 
 .copyright-notice {
-  font-size: 0.875rem;
   color: rgb(102, 102, 102);
 }
 
