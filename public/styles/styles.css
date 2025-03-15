@@ -130,7 +130,12 @@ main {
     text-align: end;
   }
 
-  .best-sellers {
+  .sidebar-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+  }
+  .sidebar-block {
     display: flex;
     flex-direction: column;
     gap: 20px;
