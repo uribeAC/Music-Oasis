@@ -3,10 +3,18 @@ export const renderHeader = () => {
   header.classList.add("main-header");
 
   header.innerHTML = `
+    <button class= "header-button header-button__search" type="button">
+      <img class="button-image button-image__search" src="/images/icons/search.svg">
+      <span class="button-name">SEARCH</span>
+    </button>
     <div class="logo-container">
-      <img class="main-header__logo" src="/images/icons/logo.svg" alt="Music Oasis logo">
-      <h1 class="site-name">MUSIC OASIS</h1>
+      <img class=" logo" src="/images/icons/logo.svg" alt="Music Oasis logo">
+      <span class="shop-name">MUSIC OASIS</span>
     </div>
+    <button class="header-button header-button__cart" type="button">
+      <img class="button-image button-image__cart" src="/images/icons/cart.svg">
+      <span class="button-name">CART</span>
+    </button>
   `;
   document.body.prepend(header);
 };
