@@ -10,7 +10,7 @@ body {
   font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main {
+.main-content {
   display: flex;
   flex-direction: column;
   padding: 45px 16px;
@@ -32,7 +32,7 @@ a:visited {
   font-style: normal;
 }
 
-.page-heading {
+.page-title {
   font-size: 1.75rem;
   font-weight: 700;
   color: rgb(31, 44, 77);
@@ -69,8 +69,11 @@ a:visited {
   height: 2rem;
 }
 
-.main-header__heading {
-  font-size: 20px;
+.site-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   display: none;
 
   @media (width >= 500px) {
@@ -166,8 +169,8 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  list-style: none;
   gap: 16px;
+  list-style: none;
 
   @media (width >= 500px) {
     display: grid;
@@ -319,6 +322,37 @@ a:visited {
   }
 }
 
+.filters {
+  display: flex;
+  gap: 20px;
+}
+
+.filter-button {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  color: rgb(107, 121, 153);
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 3px 0;
+}
+
+.filter-button--selected {
+  color: rgb(31, 44, 77);
+  border-bottom: 2px solid rgb(207, 30, 31);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 45px;
+
+  @media (width >= 500px) {
+    flex-direction: row;
+  }
+}
+
 .main-footer {
   height: 22.125rem;
   padding: 20px;
@@ -346,18 +380,6 @@ a:visited {
 
 .logo-container--footer {
   justify-content: flex-start;
-}
-
-.site-name {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: none;
-
-  @media (width >= 500px) {
-    display: inline;
-  }
 }
 
 .page-tagline {
