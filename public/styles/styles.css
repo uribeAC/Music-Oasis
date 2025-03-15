@@ -90,18 +90,25 @@ main {
   }
 }
 
-@media (width >= 500px) {
-  .container {
+.container {
+  @media (width >= 500px) {
     display: flex;
     flex-direction: row;
     gap: 47px;
   }
+}
 
-  .sidebar {
+.sidebar {
+  display: none;
+
+  @media (width >= 500px) {
     display: flex;
     flex-direction: column;
     gap: 70px;
   }
+}
+
+@media (width >= 500px) {
   .record-of-the-month {
     display: flex;
     flex-direction: column;
