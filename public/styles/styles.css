@@ -130,6 +130,7 @@ main {
   .record__actions--vertical {
     flex-direction: column;
   }
+
   .record__buttons--right {
     justify-content: flex-end;
   }
@@ -146,7 +147,7 @@ main {
 
   .sidebar-list {
     list-style-position: inside;
-    list-style-image: url(../multimedia/icons/bullet-point.svg);
+    list-style-image: url(../images/icons/bullet-point.svg);
   }
 
   .sidebar-list__text {
@@ -199,6 +200,7 @@ main {
   flex-direction: column;
   gap: 16px;
   padding: 16px;
+  justify-content: space-between;
 
   @media (width >= 500px) {
     height: 10.625rem;
@@ -263,29 +265,14 @@ main {
   gap: 10px;
 }
 
-.record__buttons > * {
+.record__button {
   cursor: pointer;
   background: transparent;
   border: none;
-  width: 24px;
-  aspect-ratio: 1 / 1;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.record__button--favorite {
-  background-image: url(../multimedia/icons/heart.svg);
-}
-
-.record__button--cart {
-  background-image: url(../multimedia/icons/cart.svg);
-}
-
-.record__button--buy {
+  min-width: fit-content;
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
-  width: fit-content;
 }
 
 .record__tags {
