@@ -439,6 +439,7 @@ a:visited {
 }
 
 .page-tagline {
+  margin-top: 12px;
   margin-bottom: 30px;
 
   @media (width >= 500px) {
