@@ -275,4 +275,10 @@ main {
 .page-header {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 45px;
+
+  @media (width >= 500px) {
+    flex-direction: row;
+  }
 }
