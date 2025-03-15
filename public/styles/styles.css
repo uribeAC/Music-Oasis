@@ -17,35 +17,10 @@ main {
   gap: 5vh;
 
   @media (width >= 500px) {
-    padding: 6.2vh 8.5vw;
-    gap: 6.2vh;
-  }
-}
-
-.page-heading {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: rgb(31, 44, 77);
-  display: flex;
-  justify-content: center;
-
-  @media (width >= 500px) {
-    font-size: 2.25rem;
-    justify-content: flex-start;
-  }
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 5vh 4vw;
-  gap: 5vh;
-
-  @media (width >= 500px) {
     margin: auto;
     max-width: 1920px;
-    padding: 60px 165px;
-    gap: 60px;
+    padding: 6.2vh 8.5vw;
+    gap: 6.2vh;
   }
 }
 
@@ -53,7 +28,7 @@ main {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
-  justify-content: center;
+  justify-content: space-between;
   width: 100vw;
   height: 3.75rem;
 
@@ -79,6 +54,56 @@ main {
 
   @media (width >= 500px) {
     display: inline;
+  }
+}
+
+.header-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  padding: 1rem;
+  height: inherit;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+
+  @media (width >= 500px) {
+    border: none;
+  }
+}
+
+.button-image {
+  height: 1.25rem;
+}
+
+.header-button__search {
+  border-right: 1px solid #e5e5e5;
+  font-size: 14px;
+}
+
+.header-button__cart {
+  border-left: 1px solid #e5e5e5;
+}
+
+.button-name {
+  display: none;
+
+  @media (width >= 500px) {
+    display: contents;
+  }
+}
+
+.page-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: rgb(31, 44, 77);
+  display: flex;
+  justify-content: center;
+
+  @media (width >= 500px) {
+    font-size: 2.25rem;
+    justify-content: flex-start;
   }
 }
 
