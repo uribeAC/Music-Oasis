@@ -9,8 +9,6 @@ export const renderRecordOfTheMonth = (records: Record[]): void => {
   records.forEach((record) => {
     if (record.isRecordOfTheMonth) {
       renderRecordCard(record, recordOfTheMonth);
-
-      console.log(record);
     }
   });
 };

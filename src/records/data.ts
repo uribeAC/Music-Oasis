@@ -79,7 +79,7 @@ export const records: Record[] = [
     type: "vinyl",
     price: 1.99,
     originalPrice: 1.99,
-    isRecordOfTheMonth: false,
+    isRecordOfTheMonth: true,
   },
   {
     id: 9,
@@ -109,7 +109,7 @@ export const records: Record[] = [
     type: "digital",
     price: 19.99,
     originalPrice: 39.99,
-    isRecordOfTheMonth: true,
+    isRecordOfTheMonth: false,
   },
   {
     id: 12,
