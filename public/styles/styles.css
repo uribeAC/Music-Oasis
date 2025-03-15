@@ -22,6 +22,14 @@ main {
   }
 }
 
+a,
+a:active,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+}
+
 .page-heading {
   font-size: 1.75rem;
   font-weight: 700;
@@ -251,4 +259,42 @@ main {
   &::after {
     content: "discount";
   }
+}
+
+.main-footer {
+  padding: 20px;
+  font-size: 0.938rem;
+  background-color: rgb(245, 247, 250);
+  color: rgb(77, 76, 76);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.copyright-notice {
+  font-size: 0.875rem;
+  color: rgb(102, 102, 102);
+}
+
+.contact-section__title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 14px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact {
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: rgb(107, 121, 153);
+}
+
+.contact--address {
+  color: rgb(77, 76, 76);
 }
