@@ -48,8 +48,11 @@ main {
   height: 2rem;
 }
 
-.main-header__heading {
-  font-size: 20px;
+.shop-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   display: none;
 
   @media (width >= 500px) {
