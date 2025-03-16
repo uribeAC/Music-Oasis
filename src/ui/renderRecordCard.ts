@@ -29,24 +29,21 @@ const renderPrices = (record: Record, recordCard: HTMLElement): void => {
   recordOriginalPrice.textContent = `$${record.originalPrice}`;
 
   if (record.price === record.originalPrice) {
-    recordOriginalPrice.classList.add("record__price--hidden");
+    recordOriginalPrice.classList.add("hidden");
     recordDiscountedPrice.classList.remove("record__price--discounted");
   }
 
-  recordOriginalPrice.classList.remove("record__price--hidden");
+  recordOriginalPrice.classList.remove("hidden");
   recordDiscountedPrice.classList.add("record__price--discounted");
 };
 
 const renderDiscount = (record: Record, recordCard: HTMLElement): void => {
-  const recordTags = recordCard.querySelector(
-    ".record__tags"
+  const recordDiscountTag = recordCard.querySelector(
+    ".record__tag--discount"
   ) as HTMLDivElement;
 
-  if (record.price !== record.originalPrice) {
-    const recordTag = document.createElement("span");
-    recordTag.classList.add("record__tag--discount");
-
-    recordTags.prepend(recordTag);
+  if (record.price === record.originalPrice) {
+    recordDiscountTag.classList.add("hidden");
   }
 };
 

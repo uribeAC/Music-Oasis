@@ -330,7 +330,7 @@ a:visited {
   color: rgb(107, 121, 153);
 }
 
-.record__price--hidden {
+.hidden {
   display: none;
 }
 
@@ -398,10 +398,6 @@ a:visited {
   text-transform: uppercase;
   align-self: start;
   order: 1;
-
-  &::after {
-    content: "discount";
-  }
 }
 
 .filters {
