@@ -195,14 +195,16 @@ a:visited {
   }
 }
 
-.sidebar-list {
+.best-sellers,
+.genres {
   @media (width >= 500px) {
     list-style-position: inside;
     list-style-image: url(../images/icons/bullet-point.svg);
   }
 }
 
-.sidebar-list__text {
+.best-seller__artist,
+.genre__name {
   @media (width >= 500px) {
     padding-left: 28.6px;
     color: rgba(107, 121, 153, 1);
@@ -211,7 +213,8 @@ a:visited {
   }
 }
 
-.sidebar-list__item + .sidebar-list__item {
+.genre + .genre,
+.best-seller + .best-seller {
   @media (width >= 500px) {
     margin-top: 16px;
   }
