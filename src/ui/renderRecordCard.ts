@@ -31,6 +31,7 @@ const renderPrices = (record: Record, recordCard: HTMLElement): void => {
   if (record.price === record.originalPrice) {
     recordOriginalPrice.classList.add("hidden");
     recordDiscountedPrice.classList.remove("record__price--discounted");
+    return;
   }
 
   recordOriginalPrice.classList.remove("hidden");
