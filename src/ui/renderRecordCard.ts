@@ -25,8 +25,6 @@ const renderPrices = (record: Record, recordCard: HTMLElement): void => {
     ".record__price"
   ) as HTMLSpanElement;
 
-  console.log(recordDiscountedPrice ? true : false);
-
   recordDiscountedPrice.textContent = `$${record.price}`;
   recordOriginalPrice.textContent = `$${record.originalPrice}`;
 
