@@ -263,6 +263,13 @@ a:visited {
   border-radius: 8px;
 }
 
+.record__cover--little {
+  @media (width >= 500px) {
+    width: 172px;
+    height: auto;
+  }
+}
+
 .record__details {
   display: flex;
   flex-direction: column;
@@ -309,6 +316,7 @@ a:visited {
 
 .record__actions--vertical {
   flex-direction: column;
+  gap: 17px;
 }
 
 .record__prices {
@@ -464,6 +472,7 @@ a:visited {
 }
 
 .page-tagline {
+  margin-top: 12px;
   margin-bottom: 30px;
 
   @media (width >= 500px) {
