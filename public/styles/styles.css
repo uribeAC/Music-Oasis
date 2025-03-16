@@ -32,6 +32,30 @@ a:visited {
   font-style: normal;
 }
 
+.main-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+  height: 3.75rem;
+
+  @media (width >= 500px) {
+    height: 5.625rem;
+  }
+}
+
+.shop-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: none;
+
+  @media (width >= 500px) {
+    display: inline;
+  }
+}
+
 .page-title {
   font-size: 1.75rem;
   font-weight: 700;
@@ -45,18 +69,6 @@ a:visited {
   }
 }
 
-.main-header {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #e5e5e5;
-  justify-content: space-between;
-  height: 3.75rem;
-
-  @media (width >= 500px) {
-    height: 5.625rem;
-  }
-}
-
 .logo-container {
   display: flex;
   gap: 10px;
@@ -66,18 +78,6 @@ a:visited {
 
 .main-header__logo {
   height: 2rem;
-}
-
-.shop-name {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: none;
-
-  @media (width >= 500px) {
-    display: inline;
-  }
 }
 
 .header-button {
@@ -117,19 +117,6 @@ a:visited {
 
   @media (width >= 500px) {
     display: contents;
-  }
-}
-
-.page-heading {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: rgb(31, 44, 77);
-  display: flex;
-  justify-content: center;
-
-  @media (width >= 500px) {
-    font-size: 2.25rem;
-    justify-content: flex-start;
   }
 }
 
