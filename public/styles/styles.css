@@ -381,7 +381,6 @@ a:visited {
   text-transform: uppercase;
   align-self: end;
   order: 0;
-
   display: none;
 
   @media (width >= 500px) {
