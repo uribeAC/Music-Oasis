@@ -19,19 +19,22 @@ const renderName = (record: Record, recordCard: HTMLElement): void => {
 const renderPrices = (record: Record, recordCard: HTMLElement): void => {
   const recordOriginalPrice = recordCard.querySelector(
     ".record__price--original s"
-  ) as HTMLDivElement;
+  ) as HTMLElement;
 
   const recordDiscountedPrice = recordCard.querySelector(
     ".record__price--discounted"
-  ) as HTMLDivElement;
+  ) as HTMLSpanElement;
 
   recordDiscountedPrice.textContent = `$${record.price}`;
   recordOriginalPrice.textContent = `$${record.originalPrice}`;
 
   if (record.price === record.originalPrice) {
-    recordOriginalPrice.remove();
+    recordOriginalPrice.classList.add("record__price--hidden");
     recordDiscountedPrice.classList.remove("record__price--discounted");
   }
+
+  recordOriginalPrice.classList.remove("record__price--hidden");
+  recordDiscountedPrice.classList.add("record__price--discounted");
 };
 
 const renderDiscount = (record: Record, recordCard: HTMLElement): void => {

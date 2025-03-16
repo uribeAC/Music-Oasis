@@ -340,6 +340,10 @@ a:visited {
   color: rgb(107, 121, 153);
 }
 
+.record__price--hidden {
+  display: none;
+}
+
 .record__price--right {
   text-align: end;
 }
