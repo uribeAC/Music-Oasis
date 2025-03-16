@@ -50,6 +50,13 @@ const renderDiscount = (record: Record, recordCard: HTMLElement): void => {
   }
 };
 
+const renderType = (record: Record, recordCard: HTMLElement): void => {
+  const recordType = recordCard.querySelector(
+    ".record__tag--type"
+  ) as HTMLSpanElement;
+  recordType.textContent = record.type;
+};
+
 export const renderRecordCard = (
   record: Record,
   recordCard: HTMLElement
@@ -57,5 +64,11 @@ export const renderRecordCard = (
   renderCover(record, recordCard);
   renderName(record, recordCard);
   renderPrices(record, recordCard);
+
+  if (record.isRecordOfTheMonth) {
+    return;
+  }
+
   renderDiscount(record, recordCard);
+  renderType(record, recordCard);
 };

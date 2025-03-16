@@ -1,6 +1,7 @@
 import { records } from "./records/data.js";
 import { renderHeader } from "./ui/renderHeader.js";
 import { renderRecordsList } from "./ui/renderRecordsList.js";
+import { renderRecordOfTheMonth } from "./ui/renderRecordOfTheMonth.js";
 
 const filterOptions = document.querySelectorAll(".filter-button");
 
@@ -23,3 +24,4 @@ filterOptions.forEach((filterOption) => {
 
 renderHeader();
 renderRecordsList(records);
+renderRecordOfTheMonth(records);
