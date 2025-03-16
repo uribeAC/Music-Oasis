@@ -203,8 +203,8 @@ a:visited {
   }
 }
 
-.best-seller__text,
-.genre__text {
+.best-seller__artist,
+.genre__name {
   @media (width >= 500px) {
     padding-left: 28.6px;
     color: rgba(107, 121, 153, 1);
