@@ -42,7 +42,7 @@ const renderDiscount = (record: Record, recordCard: HTMLElement): void => {
     ".record__tag--discount"
   ) as HTMLDivElement;
 
-  if (record.price !== record.originalPrice) {
+  if (record.price === record.originalPrice) {
     recordDiscountTag.classList.add("hidden");
   }
 };
