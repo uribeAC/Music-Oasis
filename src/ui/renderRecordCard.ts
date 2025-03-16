@@ -6,6 +6,7 @@ const renderCover = (record: Record, recordCard: HTMLElement): void => {
   ) as HTMLImageElement;
 
   recordCover.src = record.coverUrl;
+  recordCover.alt = `${record.name} cover image`;
 };
 
 const renderName = (record: Record, recordCard: HTMLElement): void => {
