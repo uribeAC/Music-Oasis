@@ -367,10 +367,10 @@ a:visited {
   position: absolute;
   aspect-ratio: 1/1;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
-  width: inherit;
-  padding: 1.5rem;
-  flex-wrap: wrap;
+  width: 100%;
+  padding: 24px;
 
   @media (width >= 500px) {
   }
@@ -379,28 +379,31 @@ a:visited {
 .record__tag--type {
   background-color: rgb(231, 248, 241);
   color: rgb(9, 178, 114);
-  padding: 0.5vh 3vw;
+  padding: 7px 20px;
   border-radius: 4px;
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
   align-self: end;
+  order: 0;
+
   display: none;
 
   @media (width >= 500px) {
-    display: block;
+    display: inline;
   }
 }
 
 .record__tag--discount {
   background-color: rgb(251, 233, 233);
   color: rgb(207, 30, 31);
-  padding: 0.5vh 2vw;
+  padding: 7px 20px;
   border-radius: 4px;
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
   align-self: start;
+  order: 1;
 
   &::after {
     content: "discount";
