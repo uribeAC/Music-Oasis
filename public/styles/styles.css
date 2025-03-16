@@ -151,6 +151,85 @@ a:visited {
   }
 }
 
+.record-of-the-month {
+  @media (width >= 500px) {
+    display: flex;
+    flex-direction: column;
+    width: 359px;
+    gap: 27px;
+  }
+}
+
+.sidebar-title {
+  @media (width >= 500px) {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.record-of-the-month__card {
+  @media (width >= 500px) {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.record-of-the-month__details {
+  @media (width >= 500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.record-of-the-month__details {
+  @media (width >= 500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.sidebar-lists {
+  @media (width >= 500px) {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+  }
+}
+
+.sidebar-block {
+  @media (width >= 500px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.sidebar-list {
+  @media (width >= 500px) {
+    list-style-position: inside;
+    list-style-image: url(../images/icons/bullet-point.svg);
+  }
+}
+
+.sidebar-list__text {
+  @media (width >= 500px) {
+    padding-left: 28.6px;
+    color: rgba(107, 121, 153, 1);
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+}
+
+.sidebar-list__item + .sidebar-list__item {
+  @media (width >= 500px) {
+    margin-top: 16px;
+  }
+}
+
 .records {
   display: flex;
   flex-direction: column;
@@ -182,6 +261,13 @@ a:visited {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.record__cover--little {
+  @media (width >= 500px) {
+    width: 172px;
+    height: auto;
+  }
 }
 
 .record__details {
@@ -228,6 +314,11 @@ a:visited {
   flex-wrap: wrap;
 }
 
+.record__actions--vertical {
+  flex-direction: column;
+  gap: 17px;
+}
+
 .record__prices {
   display: flex;
   flex-direction: column;
@@ -249,6 +340,10 @@ a:visited {
   color: rgb(107, 121, 153);
 }
 
+.record__price--right {
+  text-align: end;
+}
+
 .record__buttons {
   display: flex;
   gap: 10px;
@@ -262,6 +357,10 @@ a:visited {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
+}
+
+.record__buttons--right {
+  justify-content: flex-end;
 }
 
 .record__tags {
@@ -305,77 +404,6 @@ a:visited {
 
   &::after {
     content: "discount";
-  }
-}
-
-@media (width >= 500px) {
-  .record-of-the-month {
-    display: flex;
-    flex-direction: column;
-    width: 359px;
-    gap: 27px;
-  }
-
-  .sidebar-title {
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-
-  .record-of-the-month__card {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-  }
-
-  .record__cover--little {
-    width: 172px;
-    height: auto;
-  }
-
-  .record-of-the-month__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .record__actions--vertical {
-    flex-direction: column;
-  }
-
-  .record__buttons--right {
-    justify-content: flex-end;
-  }
-
-  .record__price--right {
-    text-align: end;
-  }
-
-  .sidebar-lists {
-    display: flex;
-    flex-direction: column;
-    gap: 49px;
-  }
-  .sidebar-block {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .sidebar-list {
-    list-style-position: inside;
-    list-style-image: url(../images/icons/bullet-point.svg);
-  }
-
-  .sidebar-list__text {
-    padding-left: 28.6px;
-    color: rgba(107, 121, 153, 1);
-    font-weight: 500;
-    font-size: 0.875rem;
-  }
-
-  .sidebar-list__item + .sidebar-list__item {
-    margin-top: 16px;
   }
 }
 
