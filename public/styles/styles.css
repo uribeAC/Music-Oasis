@@ -315,6 +315,10 @@ a:visited {
   color: rgb(107, 121, 153);
 }
 
+.record__price--hidden {
+  display: none;
+}
+
 .record__buttons {
   display: flex;
   gap: 10px;
