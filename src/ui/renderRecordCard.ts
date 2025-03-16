@@ -22,8 +22,10 @@ const renderPrices = (record: Record, recordCard: HTMLElement): void => {
   ) as HTMLElement;
 
   const recordDiscountedPrice = recordCard.querySelector(
-    ".record__price--discounted"
+    ".record__price"
   ) as HTMLSpanElement;
+
+  console.log(recordDiscountedPrice ? true : false);
 
   recordDiscountedPrice.textContent = `$${record.price}`;
   recordOriginalPrice.textContent = `$${record.originalPrice}`;
@@ -45,7 +47,10 @@ const renderDiscount = (record: Record, recordCard: HTMLElement): void => {
 
   if (record.price === record.originalPrice) {
     recordDiscountTag.classList.add("hidden");
+    return;
   }
+
+  recordDiscountTag.classList.remove("hidden");
 };
 
 const renderType = (record: Record, recordCard: HTMLElement): void => {
