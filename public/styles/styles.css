@@ -365,7 +365,7 @@ a:visited {
 .record__type,
 .record__tag {
   background-color: rgb(231, 248, 241);
-  color: rgb(9, 178, 114);
+  color: #09b272;
   padding: 7px 20px;
   border-radius: 4px;
   font-weight: 600;
